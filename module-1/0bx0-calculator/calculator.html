@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Geo:ital@0;1&family=Silkscreen:wght@400;700&family=Tiny5&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&family=Tiny5&display=swap');
+    </style>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Calculator</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="nav-bar">
+            <logo>ZEROB</logo>
+        </div>
+    </header>
+    
+    <div id="error-message">
+        <div>ERROR: </div>
+    </div>
+    <div class="main">    
+        <div class="calc-body">
+            <div class="io"><textarea name="inpbox" id="display" disabled rows="1" cols="50">0</textarea></div>
+            <div class="buttons">
+                <div>
+                    <div id="dislpayers" onclick="addContent(1)"><button>1</button></div>
+                    <div id="dislpayers" onclick="addContent(4)"><button>4</button></div>
+                    <div id="dislpayers" onclick="addContent(7)"><button>7</button></div>
+                    <div id="AC" onclick="clearContent()"><button>AC</button></div>
+                </div>
+                <div>
+                    <div id="dislpayers" onclick="addContent(2)"><button>2</button></div>
+                    <div id="dislpayers" onclick="addContent(5)"><button>5</button></div>
+                    <div id="dislpayers" onclick="addContent(8)"><button>8</button></div>
+                    <div id="dislpayers" onclick="addContent(0)"><button>0</button></div>
+                </div>
+                <div>
+                    <div id="dislpayers" onclick="addContent(3)"><button>3</button></div>
+                    <div id="dislpayers" onclick="addContent(6)"><button>6</button></div>
+                    <div id="dislpayers" onclick="addContent(9)"><button>9</button></div>
+                    <div id="DEL"><button onclick="deleteContent()">DEL</button></div>
+                </div>
+                <div>
+                    <div id="dislpayers" onclick="addContent('+')"><button>+</button></div>
+                    <div id="dislpayers" onclick="addContent('-')"><button>-</button></div>
+                    <div id="dislpayers" onclick="addContent('/')"><button>/</button></div>
+                    <div id="displayers" onclick="addContent('*')"><button>*</button></div>
+                </div>
+                <div id="equals-vertical" onclick="evaluateContent()"><button>EQUALS</button></div> 
+            </div>
+                    <div id="equals" onclick="evaluateContent()"><button>EQUALS</button></div> 
+                    <div id="equals-short" onclick="evaluateContent()"><button>=</button></div> 
+        </div>
+    </div>
+</body>
